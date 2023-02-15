@@ -1,20 +1,52 @@
 /* lidt justering af "baner" og billeder */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
-    background-color: #eee;
-    margin-block-end: 1em;
-    height: 5.5em;
+  background-color: #eee;
+  margin-block-end: 1em;
+  height: 5.5em;
 }
 
 ul li img {
-    max-height: 5em;
-    max-width: 10em;
+  max-height: 5em;
+  max-width: 10em;
 }
 
 /* animationer */
 
+@keyframes racetrack {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(85vw, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#robot {
+  animation: racetrack 3s infinite linear;
+}
+
+#bunny {
+  animation: racetrack 2s infinite ease-out;
+}
+
+#turtle {
+  animation: racetrack 5s infinite ease-in;
+}
+
+#car {
+  animation: racetrack 3s infinite ease-in-out;
+}
+
+#ball{
+ animation: racetrack 3s infinite ease-in;
+
+}
